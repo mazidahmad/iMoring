@@ -26,9 +26,13 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="150dp"
-        app:srcCompat="@drawable/iMoring_Logo"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="64dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="307dp"

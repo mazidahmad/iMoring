@@ -69,6 +69,7 @@
                         android:layout_marginTop="170dp"
                         android:background="@drawable/roundedbox80dp"
                         android:orientation="vertical"
+                        android:elevation="10dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -258,7 +259,7 @@
                                         app:layout_constraintTop_toBottomOf="@+id/textView8">
 
                                         <LinearLayout
-                                            android:id="@+id/linearLayout6"
+                                            android:id="@+id/gasMonitorLayout"
                                             android:layout_width="match_parent"
                                             android:layout_height="124dp"
                                             android:layout_marginStart="35dp"
@@ -266,6 +267,7 @@
                                             android:layout_marginEnd="35dp"
                                             android:background="@drawable/roundedbox30dp"
                                             android:backgroundTint="@color/colorAccent"
+                                            android:elevation="10dp"
                                             android:orientation="horizontal"
                                             app:layout_constraintEnd_toEndOf="parent"
                                             app:layout_constraintStart_toStartOf="parent"
@@ -462,11 +464,8 @@
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
                                                     android:background="@drawable/alpharoundedbox30dp"
-                                                    android:orientation="horizontal"
-                                                    app:layout_constraintBottom_toBottomOf="parent"
-                                                    app:layout_constraintEnd_toEndOf="parent"
-                                                    app:layout_constraintStart_toStartOf="parent"
-                                                    app:layout_constraintTop_toTopOf="parent">
+                                                    android:elevation="10dp"
+                                                    android:orientation="horizontal">
 
                                                     <android.support.constraint.ConstraintLayout
                                                         android:layout_width="match_parent"
@@ -608,6 +607,7 @@
                                                     android:layout_height="match_parent"
                                                     android:background="@drawable/alpharoundedbox30dp"
                                                     android:orientation="horizontal"
+                                                    android:elevation="10dp"
                                                     app:layout_constraintBottom_toBottomOf="parent"
                                                     app:layout_constraintEnd_toEndOf="parent"
                                                     app:layout_constraintStart_toStartOf="parent"
@@ -663,6 +663,7 @@
                         android:background="@drawable/roundedbox30dp"
                         android:backgroundTint="@color/colorPrimary"
                         android:orientation="vertical"
+                        android:elevation="10dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">

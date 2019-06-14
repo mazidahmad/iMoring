@@ -7,8 +7,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.imoring.Fragment.AddDeviceFragment;
 import com.example.imoring.Fragment.DashboardFragment;
 import com.example.imoring.Fragment.HomeFragment;
 import com.example.imoring.Fragment.NotificationFragment;
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     HomeFragment homeFragment;
     DashboardFragment dashboardFragment;
     NotificationFragment notificationFragment;
+    AddDeviceFragment addDeviceFragment;
     ProfileFragment profileFragment;
     MenuItem prevMenuItem;
 
@@ -74,11 +77,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navigation_dashboard:
                         viewPager.setCurrentItem(1);
                         break;
-                    case R.id.navigation_notifications:
+                    case R.id.navigation_add:
                         viewPager.setCurrentItem(2);
                         break;
-                    case R.id.navigation_profile:
+                    case R.id.navigation_notifications:
                         viewPager.setCurrentItem(3);
+                        break;
+                    case R.id.navigation_profile:
+                        viewPager.setCurrentItem(4);
                         break;
                 }
                 return false;
@@ -116,12 +122,15 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         homeFragment = new HomeFragment();
         dashboardFragment = new DashboardFragment();
+        addDeviceFragment = new AddDeviceFragment();
         notificationFragment = new NotificationFragment();
         profileFragment = new ProfileFragment();
         adapter.addFragment(homeFragment);
         adapter.addFragment(dashboardFragment);
+        adapter.addFragment(addDeviceFragment);
         adapter.addFragment(notificationFragment);
         adapter.addFragment(profileFragment);
         viewPager.setAdapter(adapter);
     }
+
 }
